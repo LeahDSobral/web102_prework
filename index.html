@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>Sea Monster Games</title>
   </head>
 
   <body>
@@ -24,28 +26,30 @@
     <div class="stats-container">
         <div class="stats-card">
             <h3>Individual Contributions</h3>
-            <p id="num-contributions">
-            </p>
+            <p id="num-contributions"></p>
         </div>
         <div class="stats-card">
             <h3>Total Raised</h3>
-            <p id="total-raised">
-            </p>
+            <p id="total-raised"></p>
         </div>
         <div class="stats-card">
             <h3>Total Number of Games</h3>
-            <p id="num-games">
-            </p>
+            <p id="num-games"></p>
         </div>
     </div>
     <div class="stats-container" id="top-games">
         <div class="stats-card" id="first-game">
             <h3>🥇 Top Funded Game</h3>
+            <h4 id="first-game-title"></h4> 
+            <p id="first-game-pledged"></p> 
         </div>
         <div class="stats-card" id="second-game">
             <h3>🥈 Runner Up</h3>
+            <h4 id="second-game-title"></h4> 
+            <p id="second-game-pledged"></p> 
         </div>
     </div>
+    
 
     <!-- list of games funded by Sea Monster -->
     <h2>Our Games</h2>
@@ -55,9 +59,9 @@
         <button id="funded-btn">Show Funded Only</button>
         <button id="all-btn">Show All Games</button>
     </div>
-    <div id="games-container">
 
-    </div>
+    <!-- This is where the game cards will be appended -->
+    <div id="games-container"></div>
 
     <script type="module" src="index.js"></script>
   </body>
