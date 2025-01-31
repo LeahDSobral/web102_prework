@@ -1,6 +1,6 @@
 # WEB102 Prework - Sea Monster Games
 
-Submitted by: Leah
+Submitted by: Leah Sobral
 
 Sea Monster Games is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
